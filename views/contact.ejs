@@ -1,0 +1,242 @@
+<%- include('./includes/header.ejs') %> 
+
+<!-- <div class="container-fluid">
+  <div class="row justify-content-center bg-contact">
+    <div class="col-md-10 bg-transparent m-auto ">
+      <div class="card bg-transparent  border-0" dir="rtl">
+          <div class="row justify-content-between  gap-2">
+              <div class="col-md-4 text-center contact-left" style=" align-self: center;">
+                
+                  <div class="card mb-2 border-0 px-4">
+                    <div class="row g-0">
+                      <div class="col-2 text-center m-auto ">
+                        <div class="circle">
+                        <i class="fa fa-phone-volume fa-2x text-white pt-2 "></i>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="card-body">
+                          <h5 class="card-title text-md-right">
+                            חייגו אלינו </h5>
+                          <p class="card-text text-right">
+                            <a href="tel:072-328-1414" class="text-white">072-328-1414 </a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-2 border-0 px-4">
+                    <div class="row g-0">
+                      <div class="col-2 text-center m-auto">
+                        <div class="circle ">
+                        <i class="fa fa-map-marker-alt fa-2x text-white pt-2 "></i>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="card-body">
+                          <h5 class="card-title text-md-right"> כתובתינו </h5>
+                          <p class="card-text text-right">יגיע כפיים 2 (בית פילוט), תל אביב, ישראל</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-2 border-0 px-4">
+                    <div class="row g-0">
+                      <div class="col-2 text-center m-auto">
+                        <div class="circle ">
+                        <i class="fa fa-envelope fa-2x text-white pt-2 "></i>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="card-body">
+                          <h5 class="card-title text-md-right">
+                            שלחו אימייל </h5>
+                          <p class="card-text text-right">info@biocredit.co.il</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+
+              <div class="col-md-7 contact-right">
+                <div class="text-center ">
+                  <h3 class="font-weight-bold heading text-center text-green my-md-4 my-3">Lets Take Action to Betterment</h3>
+                  <p dir="rtl" class="letter-space text-white d-none d-md-block">נציגינו ממתינים לפנייתך כעת!</p>
+                </div>
+      
+                <form action="/emailForm" method="post" role="form" class="form-style php-email-form">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                     
+                      <input type="text" name="name" dir="rtl" class="form-control text-right" id="name" placeholder="הכנס/י שם מלא.."   />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input type="email" class="form-control text-right"  dir="rtl" name="email" placeholder="הכנס/י אמייל.." id="email" data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validate"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control text-right"   dir="rtl" name="phone" id="subject"  placeholder="הכנס/י טלפון.." data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control text-right " id="message" name="message"  dir="rtl" placeholder="הכנס/י הודעה.." rows="4" data-rule="required" data-msg="Please write something for us"></textarea>
+                    <div class="validate"></div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="loading d-none">Loading</div>
+                    <div class="error-message d-none"></div>
+                    <div class="sent-message d-none">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="col-6 text-center m-auto">
+                  <button  type="submit" class="btn send-btn btn-style btn-block text-center">Send </button>
+                  </div>
+                </form>
+              </div>
+          </div>
+      </div>
+      </div>
+  </div>
+  
+</div> -->
+
+<div class="contact__wrap">
+  <h3>Lets Take Action to Betterment</h3>
+  <p dir="rtl" class="letter-space d-md-block">נציגינו ממתינים לפנייתך כעת!</p>
+  <div class="contact-container" dir="rtl">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">
+            כתובתינו</div>
+          <div class="text-one contact-text">יגיע כפיים 2 (בית פילוט), תל אביב,</div>
+          <div class="text-two contact-text">ישראל</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">חייגו אלינו</div>
+          <div class="text-one">
+            <a href="tel:072-328-1414" class="contact-text">072-328-1414 </a>
+          </div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">
+            שלחו אימייל</div>
+          <div class="text-one contact-text">codinglab@gmail.com</div>
+          <div class="text-two "><a class="contact-text" href="mailto:info@biocredit.co.il">info@biocredit.co.il</a></div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p class="topic-des">If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+      <form action="/emailForm" method="post" role="form">
+        <div class="input-box">
+          <input type="text" name="name" dir="rtl" class="text-right" id="name" placeholder="הכנס/י שם מלא.."  />
+          <div class="validate"></div>
+        </div>
+        <div class="input-box">
+          <input type="email" class="text-right"  dir="rtl" name="email" placeholder="הכנס/י אמייל.." id="email" data-rule="email" data-msg="Please enter a valid email" />
+          <div class="validate"></div>
+        </div>
+        <div class="input-box">
+          <input type="text" class="form-control text-right"   dir="rtl" name="phone" id="subject"  placeholder="הכנס/י טלפון.." data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+        </div>
+        <div class="input-box message-box">
+          <textarea class="form-control text-right " id="message" name="message"  dir="rtl" placeholder="הכנס/י הודעה.." rows="4" data-rule="required" data-msg="Please write something for us"></textarea>
+        </div>
+        <div class="mb-3">
+          <div class="loading d-none">Loading</div>
+          <div class="error-message d-none"></div>
+          <div class="sent-message d-none">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="button">
+          <button type="submit" value="Send Now" >Send</button>
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+<section class="news-part">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-md-7 col-lg-6 col-xl-5">
+              <form class="news-form">
+                  <button><span><i class="icofont-ui-email"></i>Subscribe</span></button>
+                  <input type="text" placeholder="Enter Your Email Address">
+              </form>
+          </div>
+          <div class="col-md-5 col-lg-6 col-xl-7">
+            <div class="news-text">
+                <h2>Get 20% Discount for Subscriber</h2>
+                <p>Lorem ipsum dolor consectetur adipisicing accusantium</p>
+            </div>
+        </div>
+      </div>
+  </div>
+</section>
+<section class="intro-part" dir="rtl">
+  <div class="container">
+      <div class="row intro-content">
+          <div class="col-sm-6 col-lg-3">
+              <div class="intro-wrap">
+                  <div class="intro-icon">
+                      <i class="fas fa-truck"></i>
+                  </div>
+                  <div class="intro-content">
+                      <h5>Multiple Packages</h5>
+                      <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+              <div class="intro-wrap">
+                  <div class="intro-icon">
+                      <i class="fas fa-sync-alt"></i>
+                  </div>
+                  <div class="intro-content">
+                      <h5>instant return policy</h5>
+                      <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+              <div class="intro-wrap">
+                  <div class="intro-icon">
+                      <i class="fas fa-headset"></i>
+                  </div>
+                  <div class="intro-content">
+                      <h5>quick support system</h5>
+                      <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+              <div class="intro-wrap">
+                  <div class="intro-icon">
+                      <i class="fas fa-lock"></i>
+                  </div>
+                  <div class="intro-content">
+                      <h5>secure payment way</h5>
+                      <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<%- include('./includes/footer.ejs') %> 
