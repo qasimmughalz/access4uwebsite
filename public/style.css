@@ -36,10 +36,13 @@ h6 {
 
 a,
 a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
   color: inherit;
 }
 
+.bg-blue{
+  background-color: var(--blue);
+}
 .text-blue {
   color: var(--blue) !important;
 }
@@ -72,10 +75,10 @@ h1 {
 @media only screen and (min-width: 1200px) {}
 
 
-
-
-
 /* ============================ STRUCTURE END ============================ */
+
+
+
 
 
 /* ========================= BANNER SECTION / HEADER ============== */
@@ -926,11 +929,11 @@ h3 {
   display: block;
   width: 100%;
   white-space: normal;
-  text-align: left;
+  text-align: right;
   position: relative;
   background: var(--blue);
   border-radius: 0;
-  padding: 12px 61px 12px 13px;
+  padding: 12px 31px 12px 13px;
   min-height: 70px;
   font-size: 16px;
   overflow: hidden;
@@ -948,7 +951,7 @@ h3 {
 .our-faq-wrapper .btn-link:after {
   position: absolute;
   content: '\f068';
-  right: 15px;
+  left: 15px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1011,6 +1014,11 @@ h3 {
 }
 
 
+/* ======== =============== Blogs Section ============== */
+.path .tilt-img{
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+  
 
 /* contact form */
 .contact-us__wrapper {
@@ -1085,6 +1093,8 @@ h2 {
 }
 
 .right-side .input-box {
+  border: 1px solid var(--blue);
+  border-radius: 2px;
   width: 100%;
   margin: 12px 0;
 }
@@ -1100,17 +1110,14 @@ h2 {
   resize: none;
   height: 60px;
   text-indent: 25px;
-  border: 2px solid #d6d4d4;
 }
 
 .right-side .input-box input:focus {
   box-shadow: none;
-  border: 2px solid #0984E3;
 }
 
 .right-side .input-box textarea:focus {
   box-shadow: none;
-  border: 2px solid #0984E3;
 }
 
 .right-side .message-box {
@@ -1133,20 +1140,20 @@ h2 {
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
-  background: #195D96;
+  background: var(--blue);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .button input[type="button"]:hover {
-  background: #5029bc;
+  background:  var(--blue);
 }
 
 .right-side .btn-primary {
   height: 50px;
   font-weight: 600;
   width: 110px;
-  background: #0984E3;
+  background: var(--blue);
 }
 
 
@@ -1284,7 +1291,7 @@ h2 {
   display: inline-block;
   text-transform: uppercase;
   color: #fff;
-  background: #195D96;
+  background: var(--blue);
   border: 0;
 }
 
@@ -1403,7 +1410,7 @@ h2 {
   display: inline-block;
   text-transform: uppercase;
   color: #fff;
-  background: #195D96;
+  background: var(--blue);
 }
 
 .news-form button {
@@ -1460,7 +1467,7 @@ h2 {
   border-radius: 50%;
   text-align: center;
   display: inline-block;
-  color: #9b298e;
+  color: var(--yellow);
   background: #fff;
   border: 3px double #0C1540;
   box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.1);
@@ -1477,7 +1484,15 @@ h2 {
   }
 }
 
+/* ============== blogs section ============== */
 
+.blogs-section{
+  padding: 50px 0 50px 0;
+  background-image: url('https://mgmtdigital.com/wp-content/uploads/revslider/Homepage/slider-dark-1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 
@@ -2383,10 +2398,28 @@ h2 {
 
 
 .process_banner {
-  background: radial-gradient(circle, rgba(13, 26, 70, 1) 0%, rgba(27, 101, 160, 1) 0%, rgba(23, 29, 39, 1) 87%);
-  background-position: 0 0;
+  background-image: url('https://mgmtdigital.com/wp-content/uploads/revslider/Homepage/slider-dark-1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: radial-gradient(circle, rgba(13, 26, 70, 1) 0%, rgba(27, 101, 160, 1) 0%, rgba(23, 29, 39, 1) 87%); */
+  /* background-position: 0 0; */
   overflow: hidden;
 }
+
+
+
+.process-images img{
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+
+
+
+
+
 
 .process_banner-container {
   display: flex;
@@ -2450,7 +2483,7 @@ h2 {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  background: linear-gradient(194deg, rgba(12, 21, 64, 1) 1%, rgba(29, 115, 176, 1) 53%, rgb(253 232 107 / 68%) 117%, rgba(242, 151, 39, 1) -28%);
+  background-color: var(--blue);
   transition: .2s;
   font-size: 20px;
   font-weight: 400;
@@ -2465,6 +2498,7 @@ h2 {
 .heading-111 {
   display: flex;
   align-items: center;
+  color:#fff;
 }
 
 .process-banner-image {
@@ -2515,12 +2549,14 @@ h2 {
   margin-left: auto;
 }
 
+
+
 .process-container__wrap .right {
-  width: 50%;
+  width: 60%;
 }
 
 .process-container__wrap .left {
-  width: 50%;
+  width: 40%;
   text-align: right;
 }
 
@@ -2551,7 +2587,7 @@ h2 {
   height: 100%;
   object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 5px 20px 0 rgb(11 11 11 / 5%)
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .arrow {
@@ -3268,9 +3304,9 @@ h2 {
   transition-delay: 1s;
 }
 
-.price-bg {
+/* .price-bg {
   background: radial-gradient(circle, rgba(13, 26, 70, 1) 0%, rgba(27, 101, 160, 1) 0%, rgba(23, 29, 39, 1) -2%);
-}
+}  */
 
 .process_banner-container2 {
   display: flex;
@@ -3314,6 +3350,55 @@ h2 {
 
 
 /* CLINETS */
+
+
+.client-box{
+  position: relative;
+  z-index: 0;
+  height: 400px;
+}
+.client-box-img{
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+}
+
+.client-box:hover .client-content{
+  visibility: visible;
+}
+
+.client-box:hover::before {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.client-box::before{
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+  opacity:0;
+  width: 100%;
+  background-color: rgba(12, 21, 64, 0.9)
+}
+
+.client-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  visibility: hidden;
+  z-index: 2;
+  transform: translate(-50%,-50%);
+}
+
+
+
+
+
 .clients-wrapper {
   width: 100%;
   background-color: #f4f4f4;
@@ -3427,16 +3512,16 @@ h2 {
   background: #fff;
   margin: 20px 15px 20px;
   border-radius: 15px;
-  padding-top: 1px;
-  box-shadow: 0px 14px 22px -9px #bbcbd8;
+  /* padding-top: 1px; */
+  /* box-shadow: 0px 14px 22px -9px #bbcbd8; */
 }
 
 .post-slide .post-img {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  margin: -12px 15px 8px 15px;
-  margin-left: -10px;
+  /* margin: -12px 15px 8px 15px; */
+  /* margin-left: -10px; */
 }
 
 .post-slide .post-img img {
@@ -3516,16 +3601,16 @@ h2 {
   padding: 7px 20px;
   float: right;
   font-size: 12px;
-  background: linear-gradient(194deg, rgba(12, 21, 64, 1) 1%, rgba(29, 115, 176, 1) 53%, rgb(253 232 107 / 68%) 117%, rgba(242, 151, 39, 1) -28%);
+  background-color: var(--blue);
   color: #ffffff;
-  box-shadow: 0px 10px 20px -10px #1376c5;
+  box-shadow: 0px 10px 20px -10px var(--blue);
   border-radius: 25px;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .post-slide .read-more:hover {
-  background: #3498db;
+  background: var(--yellow);
   text-decoration: none;
   color: #fff;
 }
